@@ -230,6 +230,15 @@ class UserOptions extends PureComponent {
     if (isMeteorConnected) {
       if (!meetingIsBreakout) {
         this.menuItems.push({
+          key: this.clearStatusId,
+          label: intl.formatMessage(intlMessages.clearAllLabel),
+          description: intl.formatMessage(intlMessages.clearAllDesc),
+          onClick: toggleStatus,
+          icon: 'clear_status',
+          divider: true,
+        });
+
+        this.menuItems.push({
           key: this.muteAllId,
           label: intl.formatMessage(intlMessages[isMeetingMuted ? 'unmuteAllLabel' : 'muteAllLabel']),
           description: intl.formatMessage(intlMessages[isMeetingMuted ? 'unmuteAllDesc' : 'muteAllDesc']),
@@ -246,6 +255,17 @@ class UserOptions extends PureComponent {
             onClick: toggleMuteAllUsersExceptPresenter,
             icon: 'mute',
             dataTest: 'muteAllExceptPresenter',
+          });
+        }
+
+        if (amIModerator) {
+          this.menuItems.push({
+            key: this.saveUsersNameId,
+            label: intl.formatMessage(intlMessages.saveUserNames),
+            // description: ,
+            onClick: this.onSaveUserNames,
+            icon: 'download',
+            dataTest: 'downloadUserNamesList',
           });
         }
 
@@ -269,26 +289,6 @@ class UserOptions extends PureComponent {
           });
         }
       }
-
-      if (amIModerator) {
-        this.menuItems.push({
-          key: this.saveUsersNameId,
-          label: intl.formatMessage(intlMessages.saveUserNames),
-          // description: ,
-          onClick: this.onSaveUserNames,
-          icon: 'download',
-          dataTest: 'downloadUserNamesList',
-        });
-      }
-
-      this.menuItems.push({
-        key: this.clearStatusId,
-        label: intl.formatMessage(intlMessages.clearAllLabel),
-        description: intl.formatMessage(intlMessages.clearAllDesc),
-        onClick: toggleStatus,
-        icon: 'clear_status',
-        divider: true,
-      });
 
       if (canCreateBreakout) {
         this.menuItems.push({

@@ -26,7 +26,7 @@ public:
     # "media.setsinkid.enabled" to make it work properly
     # enableDynamicAudioDeviceSelection: true
     #
-    clientTitle: BigBlueButton
+    clientTitle: MentalWe
     appName: BigBlueButton HTML5 Client
     bbbServerVersion: HTML5_FULL_BBB_VERSION
     displayBbbServerVersion: true
@@ -264,7 +264,7 @@ public:
   externalVideoPlayer:
     enabled: true
   kurento:
-    wsUrl: HOST
+    wsUrl: wss://bbb.toodou.phd/bbb-webrtc-sfu
     cameraWsOptions:
       # Valid for video-provider. Time (ms) before its WS connection times out
       # and tries to reconnect.

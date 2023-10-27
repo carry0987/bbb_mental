@@ -794,7 +794,7 @@
     "app.userList.guest.allowEveryone": "允許所有人",
     "app.userList.guest.denyEveryone": "拒絕所有人",
     "app.userList.guest.pendingUsers": "{0} 個待審核用戶",
-    "app.userList.guest.noPendingUsers": "",
+    "app.userList.guest.noPendingUsers": " ",
     "app.userList.guest.pendingGuestUsers": "{0} 個待審核訪客用戶",
     "app.userList.guest.pendingGuestAlert": "已加入會話，正在等待您的批准。",
     "app.userList.guest.rememberChoice": "記住選擇",

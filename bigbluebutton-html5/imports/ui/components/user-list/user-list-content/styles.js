@@ -112,7 +112,7 @@ const ListItem = styled(Styled.ListItem)`
     flex-grow: 1;
     line-height: 2;
     text-align: left;
-    padding-left: ${lgPaddingY};
+    /* padding-left: ${lgPaddingY}; */
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;

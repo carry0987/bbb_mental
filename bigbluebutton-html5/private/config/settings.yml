@@ -555,7 +555,7 @@ public:
     showPushLayoutButton: true
     showPushLayoutToggle: true
   pads:
-    url: ETHERPAD_HOST
+    url: https://bbb.toodou.phd/pad
     cookie:
       path: /
       sameSite: None

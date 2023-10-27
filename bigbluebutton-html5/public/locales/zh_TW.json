@@ -401,7 +401,7 @@
     "app.navBar.settingsDropdown.openAppLabel": "在BigBlueButton平板應用中打開",
     "app.navBar.settingsDropdown.helpDesc": "連結到視頻教程（在新標籤中打開）",
     "app.navBar.settingsDropdown.endMeetingDesc": "結束當前會議",
-    "app.navBar.settingsDropdown.endMeetingLabel": "結束會議",
+    "app.navBar.settingsDropdown.endMeetingLabel": "勿按",
     "app.navBar.userListToggleBtnLabel": "用戶列表切換",
     "app.navBar.toggleUserList.ariaLabel": "用戶和消息切換",
     "app.navBar.toggleUserList.newMessages": "有新消息通知",

@@ -799,7 +799,7 @@
     "app.userList.guest.pendingGuestAlert": "已加入會話，正在等待您的批准。",
     "app.userList.guest.rememberChoice": "記住選擇",
     "app.userList.guest.emptyMessage": "目前沒有訊息",
-    "app.userList.guest.inputPlaceholder": "發送訊息到訪客候補區",
+    "app.userList.guest.inputPlaceholder": "給訪客的大廳留言",
     "app.userList.guest.privateInputPlaceholder": "發送訊息給 {0}",
     "app.userList.guest.privateMessageLabel": "訊息",
     "app.userList.guest.acceptLabel": "接受",

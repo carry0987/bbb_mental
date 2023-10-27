@@ -17,7 +17,7 @@ public:
     # have echo test skipped, for example if user leaves and joins the mic
     # again or reloading page and joining mic again.
     # This setting won't have effect if skipCheck = true
-    skipCheckOnJoin: false
+    skipCheckOnJoin: true
     #
     # Allow users to change microphone/speaker dynamically
     # The device is changed immediately, without the need to rejoin

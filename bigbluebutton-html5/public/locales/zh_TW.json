@@ -684,7 +684,7 @@
     "app.audioManager.requestTimeout": "錯誤：請求超時",
     "app.audioManager.invalidTarget": "錯誤：嘗試向無效目標發出請求",
     "app.audioManager.mediaError": "錯誤：獲取媒體設備時出現問題",
-    "app.audio.joinAudio": "加入音頻",
+    "app.audio.joinAudio": "加入聲音",
     "app.audio.leaveAudio": "關閉聲音",
     "app.audio.changeAudioDevice": "更改音頻設備",
     "app.audio.enterSessionLabel": "進入會議",

@@ -231,14 +231,25 @@ class SettingsDropdown extends PureComponent {
         onClick: () => mountModal(<SettingsMenuContainer />),
       },
       {
-        key: 'list-item-about',
-        icon: 'about',
-        dataTest: 'aboutModal',
-        label: intl.formatMessage(intlMessages.aboutLabel),
-        description: intl.formatMessage(intlMessages.aboutDesc),
-        onClick: () => mountModal(<AboutContainer />),
-      },
+        key: 'list-item-shortcuts',
+        icon: 'shortcuts',
+        label: intl.formatMessage(intlMessages.hotkeysLabel),
+        description: intl.formatMessage(intlMessages.hotkeysDesc),
+        onClick: () => mountModal(<ShortcutHelpComponent />),
+      }
     );
+
+    if (allowedToEndMeeting && isMeteorConnected) {
+      this.menuItems.push(
+        {
+          key: 'list-item-end-meeting',
+          icon: 'application',
+          label: intl.formatMessage(intlMessages.endMeetingLabel),
+          description: intl.formatMessage(intlMessages.endMeetingDesc),
+          onClick: () => mountModal(<EndMeetingConfirmationContainer />),
+        },
+      );
+    }
 
     if (helpButton) {
       this.menuItems.push(
@@ -253,6 +264,18 @@ class SettingsDropdown extends PureComponent {
         },
       );
     }
+
+    this.menuItems.push(
+      {
+        key: 'list-item-about',
+        icon: 'about',
+        dataTest: 'aboutModal',
+        label: intl.formatMessage(intlMessages.aboutLabel),
+        description: intl.formatMessage(intlMessages.aboutDesc),
+        onClick: () => mountModal(<AboutContainer />),
+        divider: true,
+      },
+    );
 
     if (isIos &&
       !isTabletApp &&
@@ -281,29 +304,6 @@ class SettingsDropdown extends PureComponent {
         },
       );
     }
-
-    if (allowedToEndMeeting && isMeteorConnected) {
-      this.menuItems.push(
-        {
-          key: 'list-item-end-meeting',
-          icon: 'application',
-          label: intl.formatMessage(intlMessages.endMeetingLabel),
-          description: intl.formatMessage(intlMessages.endMeetingDesc),
-          onClick: () => mountModal(<EndMeetingConfirmationContainer />),
-        },
-      );
-    }
-
-    this.menuItems.push(
-      {
-        key: 'list-item-shortcuts',
-        icon: 'shortcuts',
-        label: intl.formatMessage(intlMessages.hotkeysLabel),
-        description: intl.formatMessage(intlMessages.hotkeysDesc),
-        onClick: () => mountModal(<ShortcutHelpComponent />),
-        divider: true,
-      },
-    );
 
     if (allowLogoutSetting && isMeteorConnected) {
       const customStyles = { background: colorDanger, color: colorWhite };

@@ -385,7 +385,7 @@
     "app.muteWarning.disableMessage": "解除靜音後禁用警告",
     "app.muteWarning.tooltip": "點擊關閉並禁用警告，直到下次解除靜音",
     "app.navBar.settingsDropdown.optionsLabel": "選項",
-    "app.navBar.settingsDropdown.fullscreenLabel": "全螢幕應用程式",
+    "app.navBar.settingsDropdown.fullscreenLabel": "進入全螢幕",
     "app.navBar.settingsDropdown.settingsLabel": "設定",
     "app.navBar.settingsDropdown.aboutLabel": "關於",
     "app.navBar.settingsDropdown.leaveSessionLabel": "離開會議",

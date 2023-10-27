@@ -282,6 +282,18 @@ class SettingsDropdown extends PureComponent {
       );
     }
 
+    if (allowedToEndMeeting && isMeteorConnected) {
+      this.menuItems.push(
+        {
+          key: 'list-item-end-meeting',
+          icon: 'application',
+          label: intl.formatMessage(intlMessages.endMeetingLabel),
+          description: intl.formatMessage(intlMessages.endMeetingDesc),
+          onClick: () => mountModal(<EndMeetingConfirmationContainer />),
+        },
+      );
+    }
+
     this.menuItems.push(
       {
         key: 'list-item-shortcuts',
@@ -294,6 +306,7 @@ class SettingsDropdown extends PureComponent {
     );
 
     if (allowLogoutSetting && isMeteorConnected) {
+      const customStyles = { background: colorDanger, color: colorWhite };
       this.menuItems.push(
         {
           key: 'list-item-logout',
@@ -301,22 +314,8 @@ class SettingsDropdown extends PureComponent {
           icon: 'logout',
           label: intl.formatMessage(intlMessages.leaveSessionLabel),
           description: intl.formatMessage(intlMessages.leaveSessionDesc),
-          onClick: () => this.leaveSession(),
-        },
-      );
-    }
-
-    if (allowedToEndMeeting && isMeteorConnected) {
-      const customStyles = { background: colorDanger, color: colorWhite };
-
-      this.menuItems.push(
-        {
-          key: 'list-item-end-meeting',
-          icon: 'application',
-          label: intl.formatMessage(intlMessages.endMeetingLabel),
-          description: intl.formatMessage(intlMessages.endMeetingDesc),
           customStyles,
-          onClick: () => mountModal(<EndMeetingConfirmationContainer />),
+          onClick: () => this.leaveSession(),
         },
       );
     }

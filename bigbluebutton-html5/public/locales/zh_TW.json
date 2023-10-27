@@ -773,7 +773,7 @@
     "app.guest.errorSeeConsole": "錯誤：詳情請參閱控制台。",
     "app.guest.noModeratorResponse": "未收到主持人的回應。",
     "app.guest.noSessionToken": "未收到會話令牌。",
-    "app.guest.windowTitle": "BigBlueButton - 訪客候補區",
+    "app.guest.windowTitle": "MentalWe LIVE | 心保視訊平台",
     "app.guest.missingToken": "缺少訪客的會話令牌。",
     "app.guest.missingSession": "缺少訪客的會話。",
     "app.guest.missingMeeting": "會議不存在。",

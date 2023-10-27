@@ -361,7 +361,7 @@
               }, MESSAGE_TIMEOUT);
               return;
             }
-            updatePositionInWaitingQueue(data.response.positionInWaitingQueue);
+            // updatePositionInWaitingQueue(data.response.positionInWaitingQueue);
             updateLobbyMessage(data.response.lobbyMessage);
 
             const ATTEMPT_EVERY_MS = 10 * 1000; // 10 seconds
